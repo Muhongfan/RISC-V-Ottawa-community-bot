@@ -1,0 +1,14 @@
+{
+  "software_to_riscv": {
+    "title": "From Software to RISC-V",
+    "body": "You already think in terms of variables, functions, and control flow. RISC-V assembly is the same logic, just closer to the metal: variables become registers (t0-t6, a0-a7, etc.), and every operation is one explicit instruction instead of an expression. `addi t1, t0, 3` means 'take the value in t0, add the immediate 3, and store the result in t1' -- no hidden steps."
+  },
+  "systems_to_riscv": {
+    "title": "From C/Systems to RISC-V",
+    "body": "You already know pointers, memory layout, and the call stack from C. RISC-V assembly is what your compiler produces underneath that C code. Every register has a calling convention (a0-a7 for arguments/return values, s0-s11 preserved across calls, t0-t6 as scratch), and there's no implicit anything -- if a value needs to move, an instruction moves it."
+  },
+  "hardware_to_riscv": {
+    "title": "Hardware Background to RISC-V",
+    "body": "RISC-V is an instruction set architecture (ISA): a contract between software and hardware. Given your background, think of each register as a physical flip-flop bank on the chip, and each instruction as a single control-signal pattern that moves data between registers and the ALU in one clock-ish step (in the RARS simulator, one instruction per execution step)."
+  }
+}

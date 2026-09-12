@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+# Local database (contains real Discord user IDs once you test)
+*.db
+riscv_bot.db
+
+# RARS jar (download separately, don't commit binaries)
+rars.jar
+*.jar
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# OS/editor cruft
+.DS_Store
+.idea/
+.vscode/

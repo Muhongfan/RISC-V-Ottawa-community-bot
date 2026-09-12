@@ -1,0 +1,35 @@
+[
+  {
+    "id": "register_trace_explainer",
+    "title": "Register Trace Explainer",
+    "reviewed": true,
+    "tracks": ["software_to_riscv", "systems_to_riscv"],
+    "description": "Build a small tool that steps through a RISC-V program and explains, in plain English, what each instruction did to the registers.",
+    "estimated_time": "3-5 hours",
+    "first_task": "Parse a 3-instruction program and print the before/after value of each register touched.",
+    "definition_of_done": "Given any short RV32I snippet, your tool prints a correct step-by-step register trace.",
+    "recommended_channel": "#project-register-trace-explainer"
+  },
+  {
+    "id": "c_to_riscv_explorer",
+    "title": "C-to-RISC-V Explorer",
+    "reviewed": true,
+    "tracks": ["software_to_riscv", "systems_to_riscv"],
+    "description": "Explore how small C functions compile down to RISC-V assembly using Compiler Explorer / a local toolchain, and document the patterns you find.",
+    "estimated_time": "4-6 hours",
+    "first_task": "Compile a simple `add` function to RISC-V assembly and annotate each generated instruction.",
+    "definition_of_done": "A short writeup mapping 3 C constructs (loop, conditional, function call) to their RISC-V equivalents.",
+    "recommended_channel": "#project-c-to-riscv-explorer"
+  },
+  {
+    "id": "instruction_decoder_visualizer",
+    "title": "Instruction Decoder Visualizer",
+    "reviewed": true,
+    "tracks": ["software_to_riscv", "hardware_to_riscv"],
+    "description": "Build a visualizer that takes a raw RISC-V instruction encoding and breaks it into its opcode/funct3/funct7/register fields.",
+    "estimated_time": "3-5 hours",
+    "first_task": "Decode a single R-type instruction (e.g. `add`) into its bit fields and label each one.",
+    "definition_of_done": "Your tool correctly decodes at least R-type, I-type, and B-type instructions.",
+    "recommended_channel": "#project-instruction-decoder"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "software_to_riscv": {
+    "id": "lab1_make_t2_15",
+    "starter_code": "li t0, 4\naddi t1, t0, 7\nadd t2, t0, t1",
+    "goal_text": "Make t2 finish at 15.",
+    "target_register": "t2",
+    "target_value": 15
+  },
+  "systems_to_riscv": {
+    "id": "lab1_make_t2_15",
+    "starter_code": "li t0, 4\naddi t1, t0, 7\nadd t2, t0, t1",
+    "goal_text": "Make t2 finish at 15.",
+    "target_register": "t2",
+    "target_value": 15
+  },
+  "hardware_to_riscv": {
+    "id": "lab1_make_t2_15",
+    "starter_code": "li t0, 4\naddi t1, t0, 7\nadd t2, t0, t1",
+    "goal_text": "Make t2 finish at 15.",
+    "target_register": "t2",
+    "target_value": 15
+  }
+}

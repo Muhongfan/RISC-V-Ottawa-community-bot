@@ -1,0 +1,47 @@
+{
+  "software_to_riscv": [
+    {
+      "id": "q1_addi_basic",
+      "prompt": "What is the value of t1 after executing these instructions?",
+      "code": "li t0, 5\naddi t1, t0, 3",
+      "options": ["3", "5", "8", "15"],
+      "correct_option": "8",
+      "misconception_tags": {
+        "3": "immediate-is-final-result",
+        "5": "ignored-immediate-entirely",
+        "15": "multiplied-instead-of-added"
+      },
+      "explanation": "`addi t1, t0, 3` writes to destination register t1 the value of source register t0 (5) plus the immediate (3). t1 = 5 + 3 = 8. The immediate alone (3) is never the result -- it's added to the source register's value."
+    }
+  ],
+  "systems_to_riscv": [
+    {
+      "id": "q1_addi_basic",
+      "prompt": "What is the value of t1 after executing these instructions?",
+      "code": "li t0, 5\naddi t1, t0, 3",
+      "options": ["3", "5", "8", "15"],
+      "correct_option": "8",
+      "misconception_tags": {
+        "3": "immediate-is-final-result",
+        "5": "ignored-immediate-entirely",
+        "15": "multiplied-instead-of-added"
+      },
+      "explanation": "`addi t1, t0, 3` writes source register t0 (5) plus the immediate (3) into t1. t1 = 5 + 3 = 8."
+    }
+  ],
+  "hardware_to_riscv": [
+    {
+      "id": "q1_addi_basic",
+      "prompt": "What is the value of t1 after executing these instructions?",
+      "code": "li t0, 5\naddi t1, t0, 3",
+      "options": ["3", "5", "8", "15"],
+      "correct_option": "8",
+      "misconception_tags": {
+        "3": "immediate-is-final-result",
+        "5": "ignored-immediate-entirely",
+        "15": "multiplied-instead-of-added"
+      },
+      "explanation": "`addi t1, t0, 3` writes source register t0 (5) plus the immediate (3) into t1. t1 = 5 + 3 = 8."
+    }
+  ]
+}
